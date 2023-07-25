@@ -1,0 +1,15 @@
+{
+  "name": "jchain",
+  "version": "0.0.1",
+  "main": "index.js",
+  "exports": {
+    ".": {
+      "require": "./index.js",
+      "import": "./index.mjs"
+    }
+  },
+  "repository": "git@github.com:tranvansang/jchain.git",
+  "author": "Sang Tran <t@sang.jp>",
+  "license": "MIT",
+  "packageManager": "yarn@3.6.1"
+}
