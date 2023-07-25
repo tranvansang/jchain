@@ -1,7 +1,13 @@
 {
   "name": "jchain",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "index.mjs",
+    "index.d.ts",
+    "index.d.mts"
+  ],
   "exports": {
     ".": {
       "require": "./index.js",
