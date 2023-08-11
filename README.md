@@ -29,11 +29,33 @@ const f = chain(
 		return 5
 		// don't call next
 	},
-	() => {
+	(next) => {
+		// next is noop
 		// this is not invoked
 	},
-)(1, 2)
+)(function noop(){}, 1, 2)
 ```
 
 - async/await is support.
-- error is thrown.
+- error is thrown to the outer call.
+- multiple chains can be combined. For e.g.,
+```javascript
+chain(
+	chain(
+		next => {
+			// do some thing
+			next()
+		},
+		next => {
+			// do some thing
+			next()
+		},
+	),
+	chain(
+		next => {
+			// do some thing
+			next() // `next` param of the last chain is what passed to the outer call (`cb` in this case). Default is noop.
+		},
+	)
+)(cb)
+```
