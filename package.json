@@ -1,11 +1,11 @@
 {
   "name": "jchain",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "index.cjs",
   "files": [
     "index.cjs",
     "index.mjs",
-    "index.d.ts",
+    "index.d.cts",
     "index.d.mts"
   ],
   "type": "module",
