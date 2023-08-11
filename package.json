@@ -1,9 +1,9 @@
 {
   "name": "jchain",
-  "version": "0.0.3",
-  "main": "index.js",
+  "version": "0.0.4",
+  "main": "index.cjs",
   "files": [
-    "index.js",
+    "index.cjs",
     "index.mjs",
     "index.d.ts",
     "index.d.mts"
@@ -11,7 +11,7 @@
   "type": "module",
   "exports": {
     ".": {
-      "require": "./index.js",
+      "require": "./index.cjs",
       "import": "./index.mjs"
     }
   },
