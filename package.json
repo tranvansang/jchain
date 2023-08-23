@@ -1,21 +1,21 @@
 {
   "name": "jchain",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "index.cjs",
   "files": [
     "index.cjs",
     "index.mjs",
-    "index.d.cts",
-    "index.d.mts"
+    "index.d.ts"
   ],
   "type": "module",
   "exports": {
     ".": {
       "require": "./index.cjs",
-      "import": "./index.mjs"
+      "import": "./index.mjs",
+			"types": "./index.d.ts"
     }
   },
-  "repository": "git@github.com:tranvansang/jchain.git",
+  "repository": "https://github.com/tranvansang/jchain",
   "author": "Sang Tran <t@sang.jp>",
   "license": "MIT",
   "packageManager": "yarn@3.6.1"
